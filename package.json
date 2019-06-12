@@ -17,5 +17,6 @@
     "gulp-if": "^2.0.2",
     "gulp-sass": "^3.2.1",
     "gulp-sourcemaps": "^2.6.5"
-  }
+  },
+  "dependencies": {}
 }
