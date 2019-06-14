@@ -68,57 +68,121 @@
     </div>
 	</header>
 	<section class="slider">
-      <h2 class="visually-hidden">О нас</h2>
-        <div class="slider__container">
-          <div class="slider__wrapper">
+    <h2 class="visually-hidden">Слайдер</h2>
+    <div class="slider__container">
+      <div class="slider__wrapper">
     		<input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
-    	    <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
-    	    <input class="visually-hidden" type="radio" id="btn-3" name="toggle">
-            <div class="slider__switches">
-            	<label class="products__btn" for="btn-1">
-                <span class="visually-hidden">Первый слайд</span>
-              </label>
-            	<label class="products__btn" for="btn-2">
-               <span class="visually-hidden">Второй слайд</span>
-              </label>
-              <label class="products__btn" for="btn-3">
-                <span class="visually-hidden">Третий слайд</span>
-              </label>
-            </div>
-            <ul class="slides__list">
-              <li class="slide first__slide" id="slide-1">
-                <p class="slide__title">
-                	<b>Долго, дорого, скрупулезно.</b>
-                </p>
-                <p class="slide__text">
-                  Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
-                </p>
-                <a class="btn btn__slide" href="#">Узнать больше</a>
+    	  <input class="visually-hidden" type="radio" id="btn-2" name="toggle">
+    	  <input class="visually-hidden" type="radio" id="btn-3" name="toggle">
+          <div class="slider__switches">
+            <label class="products__btn" for="btn-1">
+              <span class="visually-hidden">Первый слайд</span>
+            </label>
+            <label class="products__btn" for="btn-2">
+            	<span class="visually-hidden">Второй слайд</span>
+            </label>
+            <label class="products__btn" for="btn-3">
+              <span class="visually-hidden">Третий слайд</span>
+            </label>
+          </div>
+          <ul class="slides__list">
+            <li class="slide first__slide" id="slide-1">
+              <p class="slide__title">
+                <b>Долго, дорого, скрупулезно.</b>
+              </p>
+              <p class="slide__text">
+                Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.
+              </p>
+              <a class="btn btn__slide" href="#">Узнать больше</a>
             </li>
             <li class="slide second__slide" id="slide-2">
-                <p class="slide__title">
-                	<b>Любим математику как никто другой</b>
-                </p>
-                <p class="slide__text">
-                  Никакого креатива, только математические формулы для расчета идеальных пропорций.
-                </p>
-                <a class="btn btn__slide" href="#">Узнать больше</a>
+              <p class="slide__title">
+                <b>Любим математику как никто другой</b>
+              </p>
+              <p class="slide__text">
+                Никакого креатива, только математические формулы для расчета идеальных пропорций.
+              </p>
+              <a class="btn btn__slide" href="#">Узнать больше</a>
             </li>
             <li class="slide third__slide" id="slide-3">
-                <p class="slide__title">
-                	<b>Только ночь,<br>только хардкор</b>
-                </p>
-                <p class="slide__text">
-                  Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
-                </p>
-                <a class="btn btn__slide" href="#">Узнать больше</a>
+              <p class="slide__title">
+                <b>Только ночь,<br>только хардкор</b>
+              </p>
+              <p class="slide__text">
+                Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.
+              </p>
+              <a class="btn btn__slide" href="#">Узнать больше</a>
             </li>
-          </ul>
-        </div>
+        	</ul>
       </div>
-    </section>
-
-
-
+    </div>
+  </section>
+  <div class="page-wrapper">
+		<section class="advantages">
+			<div class="advantages__item">
+				<img src="../img/illustration-1.png" width="300px" height="144px" alt="">
+				<div class="advantages__title">Веб-сайты</div>
+				<p class="advantages__text">
+					Мир никогда не будет прежним
+					после того как увидит ваш сайт!
+				</p>
+				<button class="btn advantages__btn">Заказать</button>
+			</div>
+			<div class="advantages__item">
+				<img src="../img/illustration-2.png" width="300px" height="144px" alt="">
+				<div class="advantages__title">Приложения</div>
+				<p class="advantages__text">
+					Покорите топ-10 приложений в
+					AppStore и Google Play
+				</p>
+				<button class="btn advantages__btn advantages__btn--aplication">Заказать</button>
+			</div>
+			<div class="advantages__item">
+				<img src="../img/illustration-3.png" width="300px" height="144px" alt="">
+				<div class="advantages__title">Презентации</div>
+				<p class="advantages__text">
+					Вы даже не подозреваете,
+					насколько вы изумительны!
+				</p>
+				<button class="btn advantages__btn advantages__btn--presentation">Заказать</button>
+			</div>
+		</section>
+		<section class="studio-nerds">
+			<div class="studio-nerds__our">
+				<h2 class="studio-nerds__our--title">Мы &#8211; маленькая, но гордая
+				дизайн-студия из Краснодара</h2>
+				<p class="studio-nerds__our--text">
+					Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+					превыше креатива. Работаем не покладая рук,как роботы.
+				</p>
+				<h3 class="studio-nerds__our--order">
+					Выполняем заказы на разработку:
+				</h3>
+				<ul class="studio-nerds__our--offer">
+					<li>Веб-сайтов любой сложности</li>
+					<li>Мобильных приложений для IOS и Android</li>
+					<li>Слайдшоу и видео для корпоративных презентаций</li>
+				</ul>
+			</div>
+			<div class="studio-nerds__accuracy">
+				<img src="../img/nerds-illustration.png" width="360px" height="210px" alt="">
+				<h3 class="studio-nerds__accuracy--order">
+					С 2004 года любим точность во всем:
+				</h3>
+				<table class="studio-nerds__accuracy--table">
+          <tr>
+            <td>146<sup>%</sup></td>
+            <td>100<sup>%</sup></td>
+            <td>50<sup>%</sup></td>
+          </tr>
+          <tr>
+            <th>Уровень самоотдачи</th>
+            <th>Соблюдение сроков</th>
+            <th>Минимальная предоплата</th>
+          </tr>
+        </table>
+			</div>
+		</section>
+	</div>
 </body>
 </html>

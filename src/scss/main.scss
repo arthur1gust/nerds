@@ -314,3 +314,170 @@ body {
 .btn-price {
   display: block;
 }
+
+.page-wrapper {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+/* Наши преимущества */
+.advantages {
+	width: 1160px;
+	margin-top: 80px;
+	display: flex;
+	justify-content: flex-start;
+	min-height: 350px;
+	padding-bottom: 75px;
+	border-bottom: 2px solid #eeeeee;
+}
+
+.advantages__item {
+	width: 300px;
+}
+
+.advantages__item:nth-child(2),
+.advantages__item:nth-child(3) {
+	margin-left: 100px;
+}
+
+.advantages__title {
+	font-size: 24px;
+	font-weight: 700;
+	margin-top: 21px;
+	text-transform: uppercase;
+	letter-spacing: 0.2px;
+}
+
+.advantages__text {
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 19px;
+	width: 248px;
+}
+
+.advantages__btn {
+	margin-top: 16px;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 14px 40px;
+}
+
+.advantages__btn--aplication {
+	background-color: #00ca74;
+}
+
+.advantages__btn--presentation {
+	background-color: #efc84a;
+}
+
+.studio-nerds {
+	margin-top: 40px;
+	display: flex;
+	flex-wrap: nowrap;
+	padding-bottom: 48px;
+	border-bottom: 2px solid #eeeeee;
+	width: 1160px;
+}
+
+.studio-nerds__our {
+	width: 660px;
+}
+
+.studio-nerds__accuracy {
+	width: 360px;
+	margin-left: 140px;
+}
+
+.studio-nerds__our--title {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -0.7px;
+  word-spacing: -1px;
+  margin-top: 32px;
+}
+
+.studio-nerds__our--text {
+	margin-top: 4px;
+	letter-spacing: 0.3px;
+  word-spacing: 0.1px;
+}
+
+.studio-nerds__our--order {
+	margin-top: 38px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  word-spacing: -0.1px;
+}
+
+.studio-nerds__our--offer {
+  margin: 0;
+  margin-top: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.studio-nerds__our--offer li {
+  position: relative;
+  margin-bottom: 24px;
+  padding-left: 35px;
+}
+
+.studio-nerds__our--offer li::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
+.studio-nerds__accuracy--order {
+  margin-top: 28px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  word-spacing: -0.1px;
+}
+
+.studio-nerds__accuracy--table {
+	margin-top: 28px;
+}
+
+.studio-nerds__accuracy--table td {
+  margin: 0;
+  padding: 0;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.studio-nerds__accuracy--table td:last-child {
+  padding-right: 0;
+}
+
+.studio-nerds__accuracy--table th {
+  margin: 0;
+  padding: 0;
+  width: 117px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.studio-nerds__accuracy--table sup {
+  top: -15px;
+  font-size: 25px;
+  left: -2px;
+}
