@@ -158,11 +158,7 @@ body {
   top: 237px;
   left: 535px;
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 90px;
 }
@@ -241,12 +237,7 @@ body {
 }
 
 .slides__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -480,4 +471,235 @@ body {
   top: -15px;
   font-size: 25px;
   left: -2px;
+}
+
+/* Наши партнеры */
+.partners {
+	margin-top: 47px;
+	width: 1160px;
+	padding-bottom: 36px;
+	border-bottom: 2px solid #eeeeee;
+}
+
+.partners__list {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.partners__item {
+  width: 260px;
+  margin-right: 40px;
+  position: relative;
+  text-align: center;
+  //opacity: 0.2;
+
+  &::after {
+  	content: "";
+  	position: absolute;
+  	top: 0;
+  	right: -21px;
+  	width: 2px;
+  	height: 52px;
+  	background-color: #eeeeee;
+  	display: block;
+  }
+
+  &:nth-child(2)::after {
+  	top: 15px;
+  }
+
+  &:last-child::after {
+  	display: none;
+  }
+
+  & img {
+  	opacity: 0.2;
+
+  	&:hover {
+  		opacity: 1;
+  	}
+
+  	&:active {
+  		opacity: 0.1;
+  	}
+  }
+}
+
+.partners__item:first-child {
+  margin-top: 17px;
+}
+
+.partners__item:nth-child(3) {
+  margin-top: 20px;
+}
+
+.partners__item:last-child {
+  margin: 0;
+  margin-top: 6px;
+}
+
+/* Карта */
+.map {
+	//margin: 0 auto;
+	margin-top: 80px;
+	//margin-left: 92px;
+	background-image: url("../img/map.png");
+	//background-image: url("../img/svg/cart-icon.svg");
+	min-height: 417px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+
+	&::after {
+  	content: "";
+  	position: absolute;
+  	top: 89px;
+  	right: 520px;
+  	width: 367px;
+  	height: 190px;
+  	background-image: url("../img/map-marker.png");
+  	background-repeat: no-repeat;
+	}
+}
+
+.contacts {
+	width: 320px;
+	height: 308px;
+	position: absolute;
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+	left: 231px;
+	top: 54px;
+}
+
+.contacts__title {
+	text-transform: uppercase;
+	margin-top: 52px;
+	margin-left: 50px;
+	font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: -0.7px;
+  word-spacing: -1px;
+}
+
+.contacts__address {
+	margin-left: 50px;
+	margin-top: 24px;
+	line-height: 20px;
+}
+
+.contacts__telephone {
+	margin-left: 52px;
+	margin-top: 10px;
+	line-height: 20px;
+}
+
+.btn__write {
+  padding: 14px 43px;
+  cursor: pointer;
+  border: none;
+  margin-left: 52px;
+	margin-top: 20px;
+}
+
+/* Футер */
+.main__footer {
+	margin-top: 68px;
+
+	& .page-wrapper {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+	}
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  margin: 0;
+  margin-right: 140px;
+  padding: 0;
+  list-style: none;
+}
+
+.btn__social {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+
+  &:hover {
+  	background-color: #e74246;
+  }
+
+  &:active {
+  	background-color: #d7373b;
+  }
+}
+
+.btn__social-vk:active::before,
+.btn__social-fb:active::before,
+.btn__social-inst:active::before {
+  opacity: 0.3;
+}
+
+.btn__social-vk::before {
+  content: "";
+  position: absolute;
+  top: 33px;
+  left: 27px;
+  width: 26px;
+  height: 15px;
+  background-image: url("../img/svg/vk-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.btn__social-fb::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 34px;
+  width: 12px;
+  height: 22px;
+  background-image: url("../img/svg/fb-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.btn__social-inst::before {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 30px;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/svg/insta-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.footer__offer {
+	margin-top: -33px;
+}
+
+.footer__benefit {
+	width: 560px;
+	font-size: 36px;
+	line-height: 43px;
+	font-weight: 700;
+	color: #000000;
+	letter-spacing: -0.6px;
+  word-spacing: -0.2px;
+}
+
+.footer__sales {
+	margin-top: -30px;
 }
