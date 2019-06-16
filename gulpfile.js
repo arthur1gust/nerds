@@ -10,7 +10,7 @@ var browserSync = require('browser-sync').create();
 var config = {
     paths: {
         scss: './src/scss/**/*.scss',
-        html: './public/index.html'
+        html: './public/*.html'
     },
     output: {
         cssName: 'bundle.min.css',
