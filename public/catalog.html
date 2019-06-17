@@ -73,8 +73,8 @@
 	<div class="main__catalog">
 		<div class="catalog__price">
 			<section class="filters">
-			<h2 class="visually-hidden">Фильтр шаблонов</h2>
-			<span class="visually-hidden">Укажите необходимые настройки для поиска нужного вам шаблона</span>
+			<h2 class="visually__hidden">Фильтр шаблонов</h2>
+			<span class="visually__hidden">Укажите необходимые настройки для поиска нужного вам шаблона</span>
 			<form class="filters__catalog" action="https://echo.htmlacademy.ru" method="get">
 				<fieldset class="filters__price">
 					<legend class="filters__title">Стоимость:</legend>
@@ -95,38 +95,38 @@
 				<fieldset class="filters-grid">
 					<legend class="filters__title">Сетка:</legend>
 					<p class="filters__item">
-						<input class="filter__input visually-hidden input__radio" type="radio" id="grid-adaptive" name="grid" value="adaptive" checked>
+						<input class="filter__input visually__hidden input__radio" type="radio" id="grid-adaptive" name="grid" value="adaptive" checked>
 						<label for="grid-adaptive">Адаптивная</label>
 					</p>
 					<p class="filters__item">
-						<input class="filter__input visually-hidden input__radio" type="radio" id="grid-fixed" name="grid" value="fixed">
+						<input class="filter__input visually__hidden input__radio" type="radio" id="grid-fixed" name="grid" value="fixed">
 						<label for="grid-fixed">Фиксированная</label>
 					</p>
 					<p class="filters__item">
-						<input class="filter__input visually-hidden input__radio" type="radio" id="grid-rubber" name="grid" value="rubber" disabled>
+						<input class="filter__input visually__hidden input__radio" type="radio" id="grid-rubber" name="grid" value="rubber" disabled>
 						<label for="grid-rubber">Резиновая</label>
 					</p>
 				</fieldset>
 				<fieldset class="filters-properties">
 					<legend class="filters__title">Особенности:</legend>
 					<p class="filters__item">
-						<input class="filter__input visually-hidden input__checkbox" type="checkbox" id="filter-slider" name="filter-slider" checked>
+						<input class="filter__input visually__hidden input__checkbox" type="checkbox" id="filter-slider" name="filter-slider" checked>
 						<label for="filter-slider">Слайдер</label>
 					</p>
 					<p class="filters__item">
-						<input class="filter__input visually-hidden input__checkbox" type="checkbox" id="advantages" name="advantages">
+						<input class="filter__input visually__hidden input__checkbox" type="checkbox" id="advantages" name="advantages">
 						<label for="advantages">Блок преимуществ</label>
 					</p>
 					<p class="filters__item">
-						<input class="filter__input visually-hidden input__checkbox" type="checkbox" id="news" name="news" checked>
+						<input class="filter__input visually__hidden input__checkbox" type="checkbox" id="news" name="news" checked>
 						<label for="news">Новости</label>
 					</p>
 					<p class="filters__item">
-						<input class="filter__input visually-hidden input__checkbox" type="checkbox" id="gallery" name="gallery">
+						<input class="filter__input visually__hidden input__checkbox" type="checkbox" id="gallery" name="gallery">
 						<label for="gallery">Галерея</label>
 					</p>
 					<p class="filters__item">
-						<input class="filter__input visually-hidden input__checkbox" type="checkbox" id="filter-basket" name="basket">
+						<input class="filter__input visually__hidden input__checkbox" type="checkbox" id="filter-basket" name="basket">
 						<label for="filter-basket">Корзина</label>
 					</p>
 				</fieldset>
@@ -134,9 +134,9 @@
 			</form>
 			</section>
 			<section class="catalog__products">
-			<h2 class="visually-hidden">Каталог шаблонов</h2>
+			<h2 class="visually__hidden">Каталог шаблонов</h2>
 				<section class="sort">
-					<h2 class="visually-hidden">Сортировка</h2>
+					<h2 class="visually__hidden">Сортировка</h2>
 					<b>Сортировать:</b>
 					<ul class="sort__list">
 						<li><a class="sort__current">По цене</a></li>
@@ -146,12 +146,12 @@
 					<ul class="sort__arrow">
 						<li class="current">
 							<a href="#">
-								<span class="visually-hidden">По убыванию</span>
+								<span class="visually__hidden">По убыванию</span>
 							</a>
 						</li>
 						<li>
 							<a href="#">
-								<span class="visually-hidden">По возрастанию</span>
+								<span class="visually__hidden">По возрастанию</span>
 							</a>
 						</li>
 					</ul>
@@ -256,13 +256,13 @@
 		<div class="page-wrapper">
 			<ul class="footer__social">
 				<li><a class="btn__social btn__social-vk" href="#">
-					<span class="visually-hidden">Вконтакте</span></a>
+					<span class="visually__hidden">Вконтакте</span></a>
 				</li>
 				<li><a class="btn__social btn__social-fb" href="#">
-					<span class="visually-hidden">Фейсбук</span></a>
+					<span class="visually__hidden">Фейсбук</span></a>
 				</li>
 				<li><a class="btn__social btn__social-inst" href="#">
-					<span class="visually-hidden">Инстаграм</span></a>
+					<span class="visually__hidden">Инстаграм</span></a>
 				</li>
 			</ul>
 			<div class="footer__offer">
@@ -275,5 +275,25 @@
 			</div>
 		</div>
 	</footer>
+	<section class="modal modal__feedback">
+	<h2 class="modal__feedback--title">Напишите нам</h2>
+		<form class="form__feedback" action="https://echo.htmlacademy.ru" method="post">
+			<p class="feedback__item">
+				<label for="name__field">Ваше имя:</label>
+				<input class="input__field" type="text" id="name__field" name="name__field" placeholder="Имя Фамилия">
+			</p>
+			<p class="feedback__item">
+				<label for="email__field">Ваш e-mail:</label>
+				<input class="input__field" type="text" id="email__field" name="email__field" placeholder="email@example.com">
+			</p>
+			<p class="feedback__item">
+				<label for="textarea__field">Текст письма:</label>
+				<textarea class="textarea__field" id="textarea__field" placeholder="В свободной форме"></textarea>
+			</p>
+			<button class="btn btn__feedback" type="submit">Отправить</button>
+		</form>
+		<button class="modal__close" type="button">Закрыть</button>
+	</section>
+	<script src="js/script.js"></script>
 </body>
 </html>
