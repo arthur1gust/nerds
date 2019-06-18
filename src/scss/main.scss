@@ -120,11 +120,6 @@ body {
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.main-nav a:focus {
-	padding-bottom: 10px;
-	border-bottom: 2px solid #fb565a;
-}
-
 .main-nav__item--curent {
 	position: relative;
 
@@ -404,7 +399,7 @@ body {
 .studio-nerds__our--text {
 	margin-top: 4px;
 	letter-spacing: 0.3px;
-  word-spacing: 0.1px;
+	word-spacing: 0.1px;
 }
 
 .studio-nerds__our--order {
@@ -610,6 +605,10 @@ body {
 	margin-left: 52px;
 	margin-top: 10px;
 	line-height: 20px;
+}
+
+.contacts__telephone a {
+	text-decoration: none;
 }
 
 .btn__write {
@@ -1538,6 +1537,7 @@ body {
 
 .btn__feedback {
 	width: 260px;
+	font-size: 16px;
 }
 
 @-webkit-keyframes bounce {
